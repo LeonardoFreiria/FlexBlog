@@ -82,3 +82,19 @@ a {
         display: inline-block;
     }
 }
+.introducao {
+    display: flex;
+    width: 950px;
+    margin: 0px auto;
+    flex-wrap: wrap;
+}
+
+.introducao h1 {
+    font-size: 35px;
+    padding: 35px 0;
+}
+
+.introducao hr {
+    border-color: #1e66ff;
+    width: 750px;
+}
