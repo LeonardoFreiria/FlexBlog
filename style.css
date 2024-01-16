@@ -60,41 +60,77 @@ a {
     background-color: #2c70ff;
     max-width: 960px;
     margin: 0 auto;
+    padding: 15px 0;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
-    padding: 10px;
 }
 
 .menu-logo a {
     color: #f1f2f9;
-    font-size: 30px;
+    font-size: 2.25em;
     font-weight: bold;
+    margin: 0 10px;
 }
 
-.menu-container {
-    nav ul li a {
-        color: #f1f2f9;
-        font-weight: bold;
-    }
-
-    ul li {
-        display: inline-block;
-    }
+.menu-nav ul {
+    display: flex;
+    flex-wrap: wrap;
 }
+
+.menu-nav a {
+    color: #f1f2f9;
+    font-size: 1.25em;
+    display: block;
+    padding: 10px;
+}
+
+.menu-nav a:hover {
+    color: #122ab2;
+}
+
 .introducao {
     display: flex;
-    width: 950px;
-    margin: 0px auto;
+    max-width: 950px;
+    margin: 60px auto;
     flex-wrap: wrap;
 }
 
 .introducao h1 {
-    font-size: 35px;
-    padding: 35px 0;
+    font-size: 3em;
+    line-height: 1;
 }
 
-.introducao hr {
-    border-color: #1e66ff;
-    width: 750px;
+.sobre {
+    border-top: 2px solid #2c70ff;
+    border-bottom: 2px solid #2c70ff;
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sobre-info {
+    flex: 2 1 300px;
+    margin: 0 10px;
+}
+
+.sobre-info h1 {
+    font-size: 3em;
+    margin-bottom: 0.5em;
+}
+
+.sobre-info p {
+    font-size: 1.25em;
+    line-height: 1.4;
+    margin-bottom: 1em;
+    color: #7c7c7c;
+    padding: 10px 0;
+}
+
+.sobre-img {
+    flex: 1 1 160px;
+    margin: 0 10px;
 }
