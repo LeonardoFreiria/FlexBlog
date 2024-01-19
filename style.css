@@ -250,6 +250,51 @@ a {
     padding: 15px 0;
 }
 
+.qualidade {
+    max-width: 960px;
+    margin: 60px auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.qualidade-item {
+    flex: 1 1 300px;
+    margin: 20px 10px;
+}
+
+.qualidade-item h2::before {
+    content: "";
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    margin-right: 10px;
+}
+/*nth-of-type é uma pseudo-class que seleciona elementos baseado na sua posição entre os elementos
+de mesmo tipo. Aqui, eu tenho uma "row" com 3 elementos, e neste caso seleciono o primeiro elemento
+e atribuo uma cor  */
+.qualidade-item:nth-of-type(3n + 1) h2::before {
+    background-color: #ae81ff;
+}
+
+.qualidade-item:nth-of-type(3n + 2) h2::before {
+    background-color: #f8265e;
+}
+
+.qualidade-item:nth-of-type(3n + 3) h2::before,
+.qualidade-item:nth-of-type(3n + 3) h2::before {
+    background-color: #66d9eb;
+}
+
+.qualidade-item h2 {
+    color: #a4a4a4;
+}
+
+.qualidade-item p {
+    color: #838383;
+    font-size: 1.25em;
+    line-height: 1.4;
+}
+
 @media (max-width: 800px) {
     .preco {
         padding-left: 10px;
